@@ -18,12 +18,12 @@ void update_ptr(struct IPv4* s) {
 }
 
 int main() {
-    struct IPv4 s1 = {0}, s2 = {0};
+    struct IPv4 s1, s2 = {0};
     update_val(s1);
     update_ptr(&s2);
 
-	printf("%s\n", s1.data);
+    printf("%s\n", s1.data);
     printf("%s\n", s2.data);
 
-	return 0;
+    return 0;
 }
